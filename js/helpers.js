@@ -123,14 +123,8 @@ var helper = module.exports = {
       for (var x = 0; x < userStory.length; x++) {
         html += "<td>";
 
-        // first column is the task id
-        if (x === 0) {
-          html += "<a target='_blank' href='http://rndwww.nce.amadeus.net/agile/browse/" + userStory[x] +"'>";
-          html += userStory[x];
-          html += "</a>";
-        }
         // if this is a date object
-        else if (userStory[x] instanceof Date) {
+        if (userStory[x] instanceof Date) {
           let formattedDate = helper.formatDate(userStory[x]);
           html += this.formatDateString(formattedDate);
         }
