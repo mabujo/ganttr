@@ -1,0 +1,25 @@
+[
+  "example-2",
+  [
+    "NUI-10920",
+    "NUI-10920 Inheritance refactoring",
+    "28 November 2016",
+    "2016-12-01T23:00:00.000Z",
+    null,
+    null,
+    "null",
+    "8",
+    "4"
+  ],
+  [
+    "NUI-555",
+    "Task name",
+    "7 February 2017",
+    "2017-02-10T23:00:00.000Z",
+    null,
+    null,
+    "NUI-10920",
+    "5",
+    "2"
+  ]
+]

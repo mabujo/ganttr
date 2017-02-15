@@ -1,0 +1,99 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ganttr</title>
+</head>
+<body>
+  <div class="container">
+    <h1>ganttr</h1>
+    <select id="select-sprint" class="form-control">
+      <option>Select a sprint</option>
+    </select>
+    <h2 id="chart-title"></h2>
+    <div id="chart-div"></div>
+    <div id="info-div">
+      <div id=user-stories>
+        <div class="table-responsive">
+          <table id="user-stories-table" class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>Task ID</th>
+                <th>Task name</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Duration</th>
+                <th>% complete</th>
+                <th>Dependencies</th>
+                <th>Man days</th>
+                <th>Resources</th>
+              </tr>
+            </thead>
+            <tbody id="user-stories-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <h2>Add sprint</h2>
+    <div id="input-details">
+      <div id="add-tasks" class="table-editable">
+        <span class="table-add glyphicon glyphicon-plus"></span>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Task ID</th>
+              <th>Task name</th>
+              <th>Start date</th>
+              <th>Dependencies</th>
+              <th>Story points</th>
+              <th>Resources</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="true" class="taskId">
+                <a target="_blank" href="http://rndwww.nce.amadeus.net/agile/browse/NUI-10920">NUI-10920</a>
+              </td>
+              <td contenteditable="true" class="taskName">NUI-10920 Inheritance refactoring</td>
+              <td contenteditable="true" class="flatpickr">28 November 2016</td>
+              <td contenteditable="true" class="dependencies">null</td>
+              <td contenteditable="true" class="storyPoints">8</td>
+              <td contenteditable="true" class="resources">4</td>
+              <td>
+                <span class="table-remove glyphicon glyphicon-remove"></span>
+              </td>
+              <td>
+                <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                <span class="table-down glyphicon glyphicon-arrow-down"></span>
+              </td>
+            </tr>
+            <tr class="hide">
+              <td contenteditable="true" class="taskId">Task Id</td>
+              <td contenteditable="true" class="taskName">Task name</td>
+              <td contenteditable="true" class="flatpickr">Start date</td>
+              <td contenteditable="true" class="dependencies">Dependencies</td>
+              <td contenteditable="true" class="storyPoints">Story points</td>
+              <td contenteditable="true" class="resources">Resources</td>
+              <td>
+                <span class="table-remove glyphicon glyphicon-remove"></span>
+              </td>
+              <td>
+                <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                <span class="table-down glyphicon glyphicon-arrow-down"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="sprint-details" class="form-group">
+        <label for="sprint-name">Sprint name</label>
+        <input type="email" class="form-control" id="sprint-name" placeholder="Enter sprint name">
+      </div>
+      <button id="export-btn" class="btn btn-primary" disabled>Export Data</button>
+      <p id="export"></p>
+    </div>
+  </div>
+  <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
